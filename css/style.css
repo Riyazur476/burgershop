@@ -1,0 +1,1081 @@
+/*  
+    1.common css
+    2.import css
+    3.margin css
+    4.font css
+    5.header top css :
+        i .header logo-01
+        ii.header logo-02
+        iii.before header top  
+    6.header list css 
+    7.banner css :
+        i   .b-text p css
+        ii  .b-text h1 css
+        iii .b-text h2 css 
+        iv  .banner before css
+        v   .Banner img 1 css
+        vi  .Banner img 2 css
+        vii .Banner img 3 css 
+        viii.Banner img 4 css
+        vx  .Banner img 5 css
+        x   .Banner img 6 css
+        xi  .Banner img 7 css
+        xii .Banner img 8 css
+    8.banner food card css : 
+        i.img 9
+        ii.img 10
+        iii.img 11
+        iv.button  
+    9.food chart list heading css :
+        i.h2 css
+        ii.p css
+    10.event list slide css :
+        i.h3 css
+        ii.spacific css on img-t1
+        iii.p css
+        iv.a css
+        v.a hover css  
+        vi.item css
+        vii.target background item
+        viii.event-list-slide-bg
+        vx.slider target events section
+    11.aside animation css    
+    12.order food section css
+        i.title css
+        ii.clum css
+        iii.input css
+        iv.animated bottole css
+    13.animated breadimage top left body 
+    14.animated bread&plate image top right body 
+    15.footer section css
+        i.footer logo 
+        ii.footer text top
+        iii.footer text bottom copyright
+        iv.map icon 
+        v.email icon
+        vi.footer icon hover & p
+        vii.footer socialmedia icon with hover
+
+*/
+/*=========================
+    Table of Content ends
+===========================*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    vertical-align: middle;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.full-wrapper{
+    width: 100%;
+    
+}
+.container{
+    width: 1331px;
+    margin: 0 auto;
+}
+.clr{
+    clear: both;
+}
+
+/*__________________________________________
+             common css ends 
+____________________________________________*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: bebas-regulr;
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}    
+@font-face {
+    font-family: alfaslab;
+    src: url(../fonts/AlfaSlabOne-Regular.ttf);
+}    
+
+/*________________________________________
+             import font 
+__________________________________________*/
+.mb-35{
+    margin-bottom: 35px;
+}
+.mr-40{
+    margin-right: 35px;
+}
+.ml-50{
+    margin-left: 50px;
+}
+.m-30{
+    margin: 0 30px;
+}
+.ml-30{
+    margin-left: 20px;
+}
+.mt-27{
+    margin-top: 27px;
+}
+
+/*__________________________________________
+             margin css ends 
+____________________________________________*/
+.mont-bold{
+    font-family: 'Montserrat', sans-serif;
+    width: 700; 
+}
+.mont-regular{
+    font-family: 'Montserrat', sans-serif;
+    width: 400;
+}
+.bebas-regular{
+    font-family: 'bebas-regulr';
+}
+.alfaslab{
+    font-family: 'alfaslab';
+}
+/*__________________________________________
+            font css ends 
+____________________________________________*/
+
+.header-top-bg{
+    height: 60px;
+    position: relative;
+}
+.header-top-bg .header-top{
+   height: 60px;
+   position: relative;
+   top: 50px;
+}
+.header-top-bg .header-top .h-logo-1{
+    width: 263px;
+    height: 60px;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header-top-bg .header-top .h-logo-1 img{
+    width: 100%;
+}
+/*  ------------------ header logo-01  ------------------ */
+.header-top-bg .header-top .h-logo-2{
+    width: 330px;
+    height: 60px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header-top-bg .header-top .h-logo-2 img{
+    float: left;
+    position: absolute;
+    left: -80px;
+    animation: run 5s linear infinite forwards;
+}
+@keyframes run{
+    0%{
+        left: -80px;
+        transform: translateY(-0.5);
+    }
+    50%{
+        transform: translateY(1);
+    }
+    100%{
+        transform: translateY(-0.5);
+        left: 15px;
+    }
+}
+/*  ------------------ delivry img animation css  ------------------ */
+.header-top-bg .header-top .h-logo-2 span{
+    float: right;
+    padding: 16px 0 0; 
+    padding: 10px 0 30px;   
+}
+.header-top-bg .header-top .h-logo-2 span a{
+    font-size: 17px;
+    font-weight: 700;
+    color: #3d2514;
+    text-transform: capitalize;
+}
+/*  ------------------ header logo-02  ------------------ */
+.head::before{
+    content: '';
+    background-image: url(../images/bg1.jpg);
+    position: absolute;
+    width: 100%;
+    height: 825px;
+}
+/*  ------------------ before header top  ------------------ */
+/*__________________________________________
+           header top css ends 
+____________________________________________*/
+.header-list-bg{
+    height: 50px;
+    position: relative;
+    top: 54px;
+}
+.header-list-bg .header-list{
+    height: 100%;
+}
+.header-list-bg .header-list ul{
+    float: right;
+}
+.header-list-bg .header-list ul li{
+    float: left;
+    padding-left: 56px;
+}
+.header-list-bg .header-list ul li a{
+    font-size: 20.83px;
+    text-transform: uppercase;
+    color: #3d2514;
+    transition: all 0.2s linear;
+}
+.header-list-bg .header-list ul li a:hover{
+    color: #bf2222;
+}
+.header-list-bg .header-list ul li a.active{
+    color: #bf2222;
+}
+/*__________________________________________
+           header list css ends 
+____________________________________________*/
+.banner-text-bg{
+    height: 370px;  
+}
+.banner-text-bg .banner-text{
+    height: 100%;
+    position: relative;
+    margin-top: 53px;
+}
+.banner-text-bg .banner-text .b-text{
+    width: 546px;
+    height: 100%;
+    position: relative;
+}
+.banner-text-bg .banner-text .b-text p{
+    font-size: 23px;
+    padding: 14px 18px;
+    position: absolute;
+    color: #3d2514;
+    top: 120px;
+    left: 0;
+    text-transform: uppercase;
+}
+.banner-text-bg .banner-text .b-text p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 404px;
+    height: 50px;
+    border: 2px dashed #3d2514;    
+}
+/*  ------------------ b-text p css  ------------------ */
+.banner-text-bg .banner-text .b-text h1{
+    font-size: 114px;
+    color: #3d2514;
+    text-transform: uppercase;
+    position: absolute;
+    top: 168px;
+    left: 0;
+    filter: drop-shadow(0px 4px 4px #fee8bc);  
+}
+/*  ------------------ b-text h1 css  ------------------ */
+.banner-text-bg .banner-text .b-text h2{
+    font-size: 56px;
+    color: #3d2514;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    text-transform: uppercase;
+    filter: drop-shadow(0px 4px 4px #fee8bc);    
+}
+/*  ------------------ b-text h2 css  ------------------ */
+.banner-text-bg .banner-text::before{
+    content: '';
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    background: url(../images/Glow.png);
+    border-radius: 100%;
+    top: 20px;
+    left: 650px;
+    animation: glow 2s linear 3 forwards;
+}
+@keyframes glow{
+    0%{
+        transform: scale(0.5);
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 70%;
+
+    }
+    100%{
+        transform: scale(1) translateY(-30px);
+        border-bottom-right-radius: 70%;
+    }
+}
+/*  ------------------ banner before css  ------------------ */
+.banner-text-bg .banner-text img{
+    margin-right: 85px;
+}
+.banner-text-bg .banner-text .img-1{
+    position: absolute;
+    top: 110px;
+    left: 632px;
+    transform: translate(-100px);
+    animation: img-1 2s 0.3s linear 3 forwards;
+}
+@keyframes img-1{
+    100%{
+        transform: translate(0px);
+    }
+}
+/*  ------------------ Banner img 1 css  ------------------ */
+.banner-text-bg .banner-text .img-2{
+    position: absolute;
+    top: 174px;
+    left: 758px;
+    z-index: 46;
+    transform: translateY(-100px);
+    animation: img-1 2s 0.3s linear 3 forwards;
+}
+@keyframes img-1{
+    100%{
+        transform: translateY(0px);
+    }
+}
+/*------------------ Banner img 2 css  ------------------ */
+
+.banner-text-bg .banner-text .img-3{
+    position: absolute;
+    z-index: 5;
+    top: 48px;
+    left: 1096px;
+    transform: translateX(100px);
+    animation: img-1 2s 0.3s linear 3 forwards;
+}
+@keyframes img-1{
+    100%{
+        transform: translateX(0px);
+    }
+}
+/*  ------------------ Banner img 3 css  ------------------ */
+
+.banner-text-bg .banner-text .img-4{
+    position: absolute;
+    z-index: 567;
+    top: 530px;
+    left: 710px;
+    transform: translateY(-100px);
+    animation: img-2 2s 0.3s linear 3 forwards;
+}
+@keyframes img-2{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: translateY(0px) scale(1);
+    }
+}
+/* Banner img 4 css */
+
+.banner-text-bg .banner-text .img-5{
+    position: absolute;
+    z-index: 568;
+    top: 515px;
+    left: 1000px;
+    transform: translateY(-100px);
+    animation: img-2 2s 0.3s linear 3 forwards;
+}
+@keyframes img-2{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: translateY(0px) scale(1);
+    }
+}
+/*  ------------------ Banner img 5 css  ------------------ */
+.banner-text-bg .banner-text .img-7{
+    position: absolute;
+    z-index: 568;
+    top: 421px;
+    left: 651px;
+    animation: price 2s linear 3 forwards;
+}
+@keyframes price{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* ------------------ Banner img 6 css  ------------------ */
+
+.banner-text-bg .banner-text .img-8{
+    position: absolute;
+    z-index: 568;
+    top: 445px;
+    left: 690px;
+    animation: price 2s linear 3 forwards;
+}
+@keyframes price{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+/*  ------------------ Banner img 7 css  ------------------ */
+
+.banner-text-bg .banner-text .img-6{
+    position: absolute;
+    z-index: 568;
+    top: 410px;
+    left: 640px;
+    animation: price 2s linear 3 forwards;
+}
+@keyframes price{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*  ------------------ Banner img 8 css  ------------------ */
+/*__________________________________________
+          banner css ends 
+____________________________________________*/
+.card-food-bg{
+    height: 422px;
+    margin-top: 368px;
+}
+.card-food-bg .card-food{
+    height: 100%;
+}
+.card-food-bg .card-food .img-9{
+    width: 600px;
+    height: 100%;
+    float: left;
+    left: 52px;   
+    position: relative;
+    transition: all linear 0.4s;
+    cursor: pointer;
+}
+.card-food-bg .card-food .img-9:hover{
+    transform: scale(1.06);
+    filter: drop-shadow( 15px 8px 5px rgba(0,0,0, 0.3));
+}
+.card-food-bg .card-food .img-9 p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+    color: #fff;
+    padding: 30px 25px 0;
+}
+.card-food-bg .card-food .img-9 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 41px;
+    color: #fff;
+    padding: 55px 25px 0;
+}
+/*  ------------------ img 9 css  ------------------*/
+.card-food-bg .card-food .img-10{
+    width: 600px;
+    height: 193px;
+    float: left;  
+    position: relative;
+    transition: all linear 0.4s;
+    cursor: pointer;
+}
+.card-food-bg .card-food .img-10:hover{
+    transform: scale(1.06);
+    filter: drop-shadow( 15px 8px 5px rgba(0,0,0, 0.3));    
+}
+.card-food-bg .card-food .img-10 p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+    color: #fff;
+    padding: 30px 25px 0;
+}
+.card-food-bg .card-food .img-10 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 41px;
+    color: #fff;
+    padding: 55px 25px 0;
+}
+/*  ------------------ img-10 css  ------------------ */
+.card-food-bg .card-food .img-11{
+    width: 600px;
+    height: 193px;
+    float: left;
+    position: relative;
+    transition: all linear 0.4s;
+    cursor: pointer;
+}
+.card-food-bg .card-food .img-11:hover{
+    transform: scale(1.06);
+    filter: drop-shadow( 15px 8px 5px rgba(0,0,0, 0.3));
+}
+.card-food-bg .card-food .img-11 p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+    color: #fff;
+    padding: 30px 25px 0;
+}
+.card-food-bg .card-food .img-11 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 41px;
+    color: #fff;
+    padding: 55px 25px 0;
+}
+/*  ------------------ img-11 css ------------------*/
+.button-bg{
+    height: 50px;
+    margin-bottom: 166px;   
+}
+.button{
+    height: 100%;
+}
+.button a{
+    display: inline-block;
+    transform: translate(-50%,-50%);
+    color: #3d2514;
+    padding: 10px 21px;
+    margin: 95px 554px;
+    font-size: 25px;
+    position: absolute;
+    left: 422px;
+    background-color: #ffc045;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s;
+}
+.button a:hover{
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #ffc045;
+    border: 1px solid #ffc045;
+
+}
+/*  ------------------ button  ------------------ */
+/*__________________________________________
+          banner food card css ends 
+____________________________________________*/
+.food-chart-heading-bg{
+    height: 156px;
+}
+.food-chart-heading-bg .food-chart-heading{
+    height: 156px;
+}
+.food-chart-heading-bg .food-chart-heading h2{
+    font-size: 50px;
+    color: #3d2514;
+    padding: 0 0 0 418px;
+    text-transform: uppercase;
+}
+
+/*  ------------------ h2  ------------------ */
+.food-chart-heading-bg .food-chart-heading p{
+    font-size: 17px;
+    line-height: 29px;
+    text-align: center;
+    padding: 14px 188px 0 139px;
+    color: #3d2514;
+}
+/* ------------------ p ------------------ */
+
+/*__________________________________________
+          food chart heading css ends 
+____________________________________________*/
+
+.food-chart-list-slide-bg{
+    height: 616px;
+    margin-bottom: 147px;
+}
+.food-chart-list-slide .food-chart-list-slide{
+    height: 616px;
+}
+.food-chart-list-slide-bg .food-chart-list-slide .item{
+    height: 616px;
+    width: 423px;
+    float: left;
+    position: relative;
+    border-radius: 20%;
+}
+.food-chart-list-slide-bg .food-chart-list-slide .item img{
+    position: absolute;
+    top: 89px;
+    left: 0;
+}
+.food-chart-list-slide-bg .food-chart-list-slide .item .img-t{
+    position: absolute;
+    top: 363px;
+    left: -15%;
+}
+.food-chart-list-slide-bg .food-chart-list-slide .item h3{
+    position: absolute;
+    top: 427px;
+    left: 68px;
+    font-size: 37px;
+    color: #3d2514;
+}
+/*------------------ h3 ------------------ */
+.food-chart-list-slide-bg .food-chart-list-slide .item-2 .img-t1{
+    top: 57px;
+} 
+/*------------------ spacific css on img-t1 ------------------ */
+.food-chart-list-slide-bg .food-chart-list-slide .item p{
+    position: absolute;
+    top: 479px;
+    left: 16px;
+    right: 47px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 20px;
+    color: #3d2514;
+}
+/*------------------ p ------------------ */
+.food-chart-list-slide-bg .food-chart-list-slide a{
+    position: absolute;
+    top: 550px;
+    left: 103px;
+    font-size: 17px;
+    padding: 16px 63px;
+    background-color: #bf2222;
+    color: #fff;
+    text-transform: uppercase;
+    transform: translateX(-50%,-50%);
+    transition: all linear 0.3s;
+    border-radius: 10px;
+    margin-left: 9px;
+
+}
+/*------------------ a ------------------*/
+.food-chart-list-slide-bg .food-chart-list-slide a:hover{
+    border: 1px solid #bf2222;
+    background-color: #fff;
+    color: #bf2222;
+}
+/*------------------ a hover ------------------ */
+
+/*------------------ item css ends ------------------*/
+.selectitem{
+    width: 300px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+}
+#item-1:target{
+    background-color: rgba(0, 0, 0, 0.09);
+}
+#item-2:target{
+    background-color: rgba(0, 0, 0, 0.09);
+}
+#item-3:target{
+    background-color: rgba(0, 0, 0, 0.09);
+}
+/*------------------ target background item ------------------*/
+.event-list-slide-bg{
+    height: 500px;
+    margin-bottom: 30px;
+}
+/*------------------ event-list-slide-bg ------------------*/
+.event-list-slide-bg .event-list-slide{
+    height: 492px;
+    box-shadow: 0px 30px 20px 10px  rgba(0, 0, 0, 0.09);
+}
+.event-list-slide-bg .event-list-slide .event-list-slide-text{
+    width: 519px;
+    height: 300px;
+    margin: 60px 14px;
+    float: left;
+    position: relative;
+}
+.event-list-slide-bg .event-list-slide .event-list-slide-text span{
+    font-size: 29px;
+    color: #3d3d3d;
+    position: absolute;
+    top: 0;
+    left: 39px;
+}
+.event-list-slide-bg .event-list-slide .event-list-slide-text h2{
+    font-size: 41px;
+    color: #3d2514;
+    text-transform: uppercase;
+    position: absolute;
+    top: 32px;
+    left: 39px;
+}
+.event-list-slide-bg .event-list-slide .event-list-slide-text p{
+    font-size: 20px;
+    line-height: 32px;
+    color: #3d3d3d;
+    position: absolute;
+    top: 112px;
+    left: 39px;
+}
+.event-list-slide-bg .event-list-slide img{
+    float: right;
+    margin: 23px;
+}
+.slider-radio{
+    position: relative;
+    height: 17px;
+    background: transparent;
+}
+.event-list-slide-bg ul{
+    width: 80px;
+    height: 17px;
+    position: absolute;
+    top: -75px;
+    left: 76px;
+}
+.event-list-slide-bg ul li{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    float: left;
+    background-color: #dcdcdc;
+    margin-left: 8px; 
+}
+#slider:target{
+    background-color: burlywood;
+}
+#slider2:target{
+    background-color: rgb(255, 255, 255);
+}
+/*------------------ slider target events section ------------------*/
+.event-list-slide-bg ul li a{
+    display: block;
+    color: #ffc045;
+}
+.event-list-slide-bg ul li:nth-child(1){
+    background-color: #ffc045;
+}
+.event-list-slide-bg ul li:nth-child(2){
+    background-color: #dcdcdc;
+}
+.event-list-slide-bg ul li:nth-child(3){
+    background-color: #dcdcdc;
+}
+/*____________________________________________* 
+           event list slide css ends 
+____________________________________________**/
+.img{
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    width: 200px;
+    top: 50px;
+    animation: burger 3s linear infinite forwards;
+}
+.img img{
+    width: 190px;
+}
+@keyframes burger{
+    0%{
+        top: 0px;
+    }
+    50%{
+        top: 50px;
+    }
+    100%{
+        top: 0px;
+    }
+} 
+/*____________________________________________*
+            aside animation css ends
+____________________________________________*/
+.order-food-bg{
+    height: 520px;
+    margin-bottom: 165px;
+}
+.order-food-bg .order-food{
+    height: 100%;
+}
+.order-food-bg .order-food .order-food-title{
+    height: 177px;
+    position: relative;
+}
+.order-food-bg .order-food .order-food-title h5{
+    font-size: 29px;
+    color: #3d2514;
+    left: 627px;
+    transform: translateX(-50%,-50%);
+    position: absolute;
+    top: 80px;
+    
+}
+.order-food-bg .order-food .order-food-title h3{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #3d2514;
+    left: 409px;
+    transform: translateX(-50%,-50%);
+    position: absolute;
+    top: 120px;
+}
+/*------------------ title css ends ------------------*/
+.order-food-bg .order-food .order-food-form{
+    height: 350px;
+    position: relative;   
+}
+.order-food-bg .order-food .order-food-form .firstclm{
+    width: 388px;
+    height: 350px;
+    position: absolute;
+    top: 88px;
+    left: 295px;
+
+}
+.order-food-bg .order-food .order-food-form .secondclm{
+    width: 388px;
+    height: 350px;
+    position: absolute;
+    top: 88px;
+    left: 683px;
+}
+.order-food-bg .order-food .order-food-form .secondclm a{
+    display: block;
+    width: 380px;
+    height: 65px;
+    padding: 18px 12px;
+    font-size: 20px;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+    background-color: #bf2222;
+    text-transform: uppercase;
+    transition: all linear 0.3s;
+}
+.order-food-bg .order-food .order-food-form .secondclm a:hover{
+    border: 1px solid #ebae4c;
+    background-color: #fff;
+    color: #ebae4c;
+}
+/*------------------ cloum css------------------*/
+input{
+    display: block;
+    width: 380px;
+    height: 65px;
+    border: 1px solid #ebae4c;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 25px 12px;
+}
+input::placeholder{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'bebas-regulr';
+    color: #3d3d3d; 
+}
+/*------------------ input css------------------*/
+.order-food-bg .order-food .order-food-form img{
+    position: absolute;
+    top: 20px;
+    left: 72px;
+    animation: scale-bottle 7s linear infinite;
+}
+@keyframes scale-bottle{
+    0%{
+        transform: scale(0.9);
+    } 
+    50%{
+        transform: scale(1.1) skewX(5deg);
+    } 
+    100%{
+        transform: scale(0.9);
+    }
+}
+/*------------------animated bottole css------------------  */
+
+/*____________________________________________*
+            order food section css ends
+____________________________________________*/
+.beside-table-book{
+    position: absolute;
+    left: -5%;
+    top: 2918px;
+    animation: round 6s linear 0.3s infinite;
+}
+@keyframes round{
+    0%{
+        transform: rotate(0deg) translateY(0);
+    }
+    50%{
+        transform: rotate(50deg) translateY(5px);
+    }
+    0%{
+        transform: rotate(0deg) translateY(0);
+    }
+
+}
+/*------------------ bread  ------------------*/
+.bottom-table-book{
+    position: absolute;
+    right: -5%;
+    top: 3177px;
+    animation: slip 6s linear 0.3s infinite;
+}
+@keyframes slip{
+    0%{
+        transform: rotate(0deg) translateX(0);
+    }
+    50%{
+        transform: rotate(10deg) translateX(10px);
+    }
+    0%{
+        transform: rotate(0deg) translateX(0);
+    }
+}
+/* ------------------ plate&bread ------------------ */
+.footer-bg{
+    height: 526px;
+}
+.footer-bg .footer{
+    height: 100%;
+    position: relative;
+}
+.footer-bg .footer .fimg-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* ------------------ footer logo ------------------ */
+.footer-bg .footer .f-t-a{
+    position: absolute;
+    top: 83px;
+    left: 45px;
+    z-index: 34;
+}
+.footer-bg .footer .f-t-p{
+    position: absolute;
+    width: 633px;
+    top: 220px;
+    left: 45px;
+    line-height: 25px;
+    padding-right: 118px;
+    font-size: 16px;
+    z-index: 34;
+    color: #fff;
+}
+/* ------------------ footer text top------------------ */
+.footer-bg .footer .f-b-p{
+    position: absolute;
+    top: 480px;
+    left: 138px;
+    font-size: 16px;
+    z-index: 34;
+    color: #fff;
+}
+.footer-bg .footer .f-b-a{
+    position: absolute;
+    top: 480px;
+    left: 45px;
+    font-size: 16px;
+    z-index: 35;
+    color: #fff;
+    transition: all linear 0.3s;
+
+}
+.footer-bg .footer .f-b-a:hover{
+    color: #ebae4c;
+}
+/* ------------------ footer text bottom copyright ------------------ */
+.footer-bg .footer .map{
+    position: absolute;
+    top: 237px;
+    left: 936px;
+    z-index: 39;
+    width: 300px;
+    height: 39px;
+}
+/* ------------------ footer map icon ------------------ */
+.footer-bg .footer .email{
+    position: absolute;
+    top: 290px;
+    left: 936px;
+    z-index: 39;
+    width: 300px;
+    height: 39px;
+}
+/* ------------------ email icon ------------------ */
+.footer-bg .footer i{
+    width: 39px;
+    height: 39px;
+    font-size: 39px;
+    float: left;
+    color: #fff;
+    transition: all linear 0.3s;
+}
+.footer-bg .footer .i-p{
+    width: 235px;
+    height: 20px;
+    float: left;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 25px;
+    line-height: 39px;
+}
+
+.footer-bg .footer a i:hover{
+    color: #ebae4c;
+}
+/* ------------------ footer icon hover and p ------------------ */
+.footer-bg .footer .socialmedia-icon{
+    position: absolute;
+    top: 469px;
+    left: 1135px;
+    z-index: 36;
+    width: 162px;
+    height: 35px;
+}
+.footer-bg .footer .socialmedia-icon a{
+    width: 29px;
+    height: 29px;
+}
+.footer-bg .footer .socialmedia-icon a i{
+    width: 29px;
+    height: 29px;
+    font-size: 20px;
+    margin-left: 11px;
+    color: #000;
+    line-height: 29px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all linear 0.2s;
+}
+.footer-bg .footer .socialmedia-icon a i:hover{
+    color: #fff;
+    background: linear-gradient(to right, #bf2222,#ebae4c);
+    transform: scale(1.1) translateX(2px) translateY(-1px);
+    box-shadow: 3px 2px #979797;
+    filter: brightness(1.2);
+}
+/* ------------------footer socialmedia icon with hover ------------------  */
+/*____________________________________________*
+            footer section css ends
+____________________________________________*/
